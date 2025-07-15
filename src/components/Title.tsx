@@ -1,10 +1,6 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
 import './style.css'
-import { equal } from 'assert'
-import { log } from 'console'
-
 interface TitleProps {
   value: string
   address: {

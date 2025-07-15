@@ -1,10 +1,9 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 const heavyTask = () => {
   for (var i = 0; i < 10000; i++) {
     let obj = { name: 'cc', age: 12 }
     let objString = JSON.stringify(obj)
     obj = JSON.parse(objString)
-    // console.log(objString + `${i}`)
   }
 }
 export default function Count() {

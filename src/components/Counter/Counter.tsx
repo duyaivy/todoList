@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import { useReducer } from 'react'
 const initalState = {
   age: 26
 }

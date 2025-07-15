@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 import { Todo } from '../@types/todo.type'
@@ -16,7 +16,7 @@ interface TaskListProps extends InjectedType {
   checkTodo: (id: string, done: boolean) => void
 }
 function TaskList(props: TaskListProps) {
-  const { doneTaskList, todos, startEditTodo, delTodo, checkTodo, profile } = props
+  const { doneTaskList, todos, startEditTodo, delTodo, checkTodo } = props
   const handleEdit = (id: string) => {
     startEditTodo(id)
   }

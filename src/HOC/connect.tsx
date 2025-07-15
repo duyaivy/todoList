@@ -1,5 +1,4 @@
 import React from 'react'
-import { debug, log } from '../constand'
 
 export interface InforType {
   debug: boolean

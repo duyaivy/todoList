@@ -4,22 +4,13 @@ import TaskInput from './TaskInput'
 import TaskList from './TaskList'
 import { Todo } from '../@types/todo.type'
 import Title from './Title'
-import Watch from './Watch/Watch'
-
 import './style.css'
-import Count from './Count/Count'
-import Counter from './Counter/Counter'
 
 interface handleNewTodos {
   (todos: Todo[]): Todo[]
 }
 const initialState = {
   todos: [] as Todo[]
-}
-type typeTodo = {
-  name: string
-  done: boolean
-  id: string
 }
 type actionType =
   | {
@@ -85,9 +76,6 @@ export default function TodoList() {
       done: false,
       id: new Date().toISOString()
     }
-    // setTodos((prev) => {
-    //   return [...prev, todo]
-    // })
     dispatch({ type: 'addTodo', payload: todo })
     syncToLocal((todosObj: Todo[]) => [...todosObj, todo])
   }

@@ -9,9 +9,6 @@ import Title from './Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons'
 import './style.css'
-
-import { idText } from 'typescript'
-
 interface TaskInputProp {
   addTodo: (name: string) => void
   currentTodo: Todo | null
